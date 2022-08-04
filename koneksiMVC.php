@@ -9,13 +9,14 @@ $mysqli=mysqli_connect($host,$user,$pass,$db);
 
 if(!$mysqli)
 {
-	echo("ERROR! NOT CONNECTED!");
-	echo("LIST ENV");
-	echo("Host: " . $host);
-	echo("Port: " . $port);
-	echo("User: " . $user);
-	echo("Pass: " . $pass);
-	echo("DB  : " . $db);
+	#Untuk mengecek errornya dimana
+	echo("\nERROR! NOT CONNECTED!");
+	echo("\nLIST ENV");
+	echo("\nHost: " . $host);
+	echo("\nPort: " . $port);
+	echo("\nUser: " . $user);
+	echo("\nPass: " . $pass);
+	echo("\nDB  : " . $db);
 }
 else
 {
