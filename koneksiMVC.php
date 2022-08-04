@@ -10,6 +10,12 @@ $mysqli=mysqli_connect($host,$user,$pass,$db);
 if(!$mysqli)
 {
 	echo("ERROR! NOT CONNECTED!");
+	echo("LIST ENV");
+	echo("Host: " . $host);
+	echo("Port: " . $port);
+	echo("User: " . $user);
+	echo("Pass: " . $pass);
+	echo("DB  : " . $db);
 }
 else
 {
