@@ -7,7 +7,7 @@ $db=getenv("databasename");
 
 $mysqli=mysqli_connect($host,$user,$pass,$db);
 
-if(!$con)
+if(!$mysqli)
 {
 	echo("ERROR! NOT CONNECTED!");
 }
