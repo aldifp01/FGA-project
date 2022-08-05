@@ -63,7 +63,7 @@
             </thead>
         </table>
         <form action="v_tambahProker.php?page=add"> 
-            <input type="submit" value="Tambah Program Kerja">
+            <input type="submit" value="Tambah Program Kerja" class="registerbtn" name="Tambah">
         </form>
         <form action="v_login.php" method="POST">
             <input type="submit" value="Logout" class="registerbtn" name="Logout">
