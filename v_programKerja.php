@@ -46,19 +46,19 @@
                 </tr>
             <tbody>
                 <?php
-                    foreach ($proker as $row) {
-                        echo " <tr>
-                        <td> $row[nomorProgram]</td>
-                        <td> $row[namaProgram]</td>
-                        <td> $row[suratKeterangan]</td>
-                        <td><a href='?page=edit&value="; echo
-                        "$row[nomorProgram]"; echo "'> Edit"; echo" </a> |
-                        <a href='?page=delete&value="; echo
-                        "$row[nomorProgram]"; echo "'> Delete"; echo" </a></td>
-                        </td>
-                        </tr> ";
-                    }
+                foreach ($program as $p) {
                 ?>
+                    <tr>
+                        <td><?php echo
+                            $p['nomorProgram']; ?></td>
+                        <td><?php echo
+                            $p['namaProgram']; ?></td>
+                        <td><?php echo
+                            $p['suratKeterangan']; ?></td>
+                        <td> <a href=index.php?edit=$row['nomorProgram']>Edit</a></td>
+                        <td> <a href=index.php?delete=$row['nomorProgram']>Delete</a></td>
+                    </tr>
+                <?php }; ?>
             </tbody>
             </thead>
         </table>
