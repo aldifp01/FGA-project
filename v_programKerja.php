@@ -55,7 +55,7 @@
                             $p['namaProgram']; ?></td>
                         <td><?php echo
                             $p['suratKeterangan']; ?></td>
-                        <td> <a href=index.php?edit&value=<?php echo $p['nomorProgram'];?> >Edit</a></td>
+                        <td> <a href=index.php?edit=<?php echo $p['nomorProgram'];?> >Edit</a></td>
                         <td> <a href=index.php?delete=<?php echo $p['nomorProgram'];?>>Delete</a></td>
                     </tr>
                 <?php }; ?>
