@@ -55,11 +55,16 @@
                             $p['namaProgram']; ?></td>
                         <td><?php echo
                             $p['suratKeterangan']; ?></td>
+                        <td> <a href=index.php?edit=$row[nomorProgram]>Edit</a></td> 
+                        <td> <a href=index.php?delete=$row[nomorProgram]>Delete</a></td>
                     </tr>
                 <?php }; ?>
             </tbody>
             </thead>
         </table>
+        <form action="v_tambahProker.php?page=add"> 
+            <input type="submit" value="Tambah Program Kerja">
+        </form>
         <form action="v_login.php" method="POST">
             <input type="submit" value="Logout" class="registerbtn" name="Logout">
         </form>
