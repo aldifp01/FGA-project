@@ -60,6 +60,6 @@ class c_programKerja
     public function logout()
     {
         $this->model->Logout();
-        header('location: loginPage.php');
+        header('location: v_login.php');
     }
 }
